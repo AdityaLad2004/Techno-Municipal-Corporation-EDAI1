@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProblemCatagory"
+    android:layout_gravity="center"
+    android:background="@drawable/grad1">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/strayAnimals"
+        android:layout_width="353dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="100dp"
+
+
+        android:layout_marginBottom="52dp"
+        android:onClick="nextStrayAnimal"
+        app:cardBackgroundColor="#5560C4"
+        app:cardCornerRadius="11dp"
+        app:cardElevation="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/deadAnimalReport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/strayAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Stray Animal"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:translationX="70dp"
+            android:translationY="50dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="294dp"
+            android:layout_height="135dp"
+            android:translationX="-90dp"
+            android:translationY="5dp"
+            app:srcCompat="@drawable/strayanimal" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/deadAnimalReport"
+        android:layout_width="352dp"
+        android:layout_height="137dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="nextDeadAnimalReport"
+        app:cardBackgroundColor="#5560C4"
+        app:cardCornerRadius="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/garbageReport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="131dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/animalaccident" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dead Animal Report"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:translationX="135dp"
+            android:translationY="50dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/garbageReport"
+        android:layout_width="351dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:onClick="nextgarbageReport"
+        app:cardBackgroundColor="#5560C4"
+        app:cardCornerRadius="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationX="-40dp"
+            app:srcCompat="@drawable/garbage" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garbage Report"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:translationX="140dp"
+            android:translationY="50dp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="168dp"
+        android:layout_height="142dp"
+        app:layout_constraintBottom_toTopOf="@+id/strayAnimals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
