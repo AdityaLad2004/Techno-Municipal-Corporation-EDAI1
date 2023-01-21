@@ -4,83 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/grad1">
+    android:background="@drawable/grad1"
+
+    tools:context=".MainActivity" >
 
     <ImageView
         android:id="@+id/loginImage"
-        android:layout_width="416dp"
-        android:layout_height="302dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/fullName"
+        android:layout_width="407dp"
+        android:layout_height="253dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logindesign" />
 
     <EditText
-        android:id="@+id/fullName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:ems="10"
-        android:hint="Enter Full Name"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/eMail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/eMail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
-        android:ems="10"
-        android:hint="Enter Email ID"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/mobNum"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
         android:id="@+id/mobNum"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
+        android:background="@drawable/edittextdesign"
         android:ems="10"
         android:hint="Enter Mobile Number"
         android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/login"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginpassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432" />
 
     <Button
         android:id="@+id/login"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/holo_blue_bright"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#1877f2"
         android:onClick="problemCatagory"
         android:text="Login"
-        app:layout_constraintBottom_toTopOf="@+id/snapSolve"
+        app:circularflow_radiusInDP="8dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/notregistered"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/snapSolve"
         android:layout_width="151dp"
         android:layout_height="54dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="32dp"
         android:fontFamily="@font/bad_script"
         android:text="Snap Solve"
         android:textAllCaps="false"
         android:textSize="34sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/loginImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/loginpassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:ems="10"
+        android:background="@drawable/edittextdesign"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/notregistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:onClick="register"
+        android:text="Not Registered ? Click Here"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/snapSolve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

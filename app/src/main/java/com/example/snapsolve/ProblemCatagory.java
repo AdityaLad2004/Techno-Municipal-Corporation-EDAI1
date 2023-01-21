@@ -16,7 +16,7 @@ public class ProblemCatagory extends AppCompatActivity {
         setContentView(R.layout.activity_problem_catagory);
         garbageReport=(CardView) findViewById(R.id.garbageReport);
         deadAnimalReport=(CardView) findViewById(R.id.deadAnimalReport);
-        strayAnimal=(CardView) findViewById(R.id.strayAnimals);
+        strayAnimal = (CardView) findViewById(R.id.strayAnimals);
 
         }
 
@@ -36,8 +36,7 @@ public class ProblemCatagory extends AppCompatActivity {
         Toast.makeText(this, "Opening Dead Animal Report Section", Toast.LENGTH_SHORT).show();
         Intent dead=new Intent(this, imageAndDescriptiondead.class);
         startActivity(dead);
+
     }
-
-
 
 }

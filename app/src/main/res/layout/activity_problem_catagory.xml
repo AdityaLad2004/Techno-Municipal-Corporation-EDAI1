@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProblemCatagory"
     android:layout_gravity="center"
-    android:background="@drawable/grad1">
+    android:background="@drawable/grad1"
+    tools:context=".ProblemCatagory">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/strayAnimals"
         android:layout_width="353dp"
         android:layout_height="134dp"
-        android:layout_marginTop="100dp"
 
 
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="20dp"
         android:onClick="nextStrayAnimal"
         app:cardBackgroundColor="#5560C4"
         app:cardCornerRadius="11dp"
@@ -23,8 +22,6 @@
         app:layout_constraintBottom_toTopOf="@+id/deadAnimalReport"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints">
 
         <TextView
@@ -51,13 +48,12 @@
         android:id="@+id/deadAnimalReport"
         android:layout_width="352dp"
         android:layout_height="137dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="28dp"
         android:onClick="nextDeadAnimalReport"
         app:cardBackgroundColor="#5560C4"
         app:cardCornerRadius="11dp"
         app:layout_constraintBottom_toTopOf="@+id/garbageReport"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
 
@@ -82,7 +78,7 @@
         android:id="@+id/garbageReport"
         android:layout_width="351dp"
         android:layout_height="140dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="100dp"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?android:selectableItemBackground"
@@ -91,7 +87,7 @@
         app:cardCornerRadius="11dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
 
@@ -119,7 +115,11 @@
         android:layout_height="142dp"
         app:layout_constraintBottom_toTopOf="@+id/strayAnimals"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206"
         app:srcCompat="@drawable/logo" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
