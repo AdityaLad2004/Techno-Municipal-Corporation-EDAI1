@@ -14,7 +14,7 @@
         android:layout_height="134dp"
 
 
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="56dp"
         android:onClick="nextStrayAnimal"
         app:cardBackgroundColor="#5560C4"
         app:cardCornerRadius="11dp"
@@ -48,12 +48,13 @@
         android:id="@+id/deadAnimalReport"
         android:layout_width="352dp"
         android:layout_height="137dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="56dp"
         android:onClick="nextDeadAnimalReport"
         app:cardBackgroundColor="#5560C4"
         app:cardCornerRadius="11dp"
         app:layout_constraintBottom_toTopOf="@+id/garbageReport"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
 
@@ -72,6 +73,8 @@
             android:textSize="24sp"
             android:translationX="135dp"
             android:translationY="50dp" />
+
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -109,17 +112,20 @@
             android:translationY="50dp" />
     </androidx.cardview.widget.CardView>
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="168dp"
-        android:layout_height="142dp"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Select Problem Catagory"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/strayAnimals"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

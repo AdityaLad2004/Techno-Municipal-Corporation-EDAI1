@@ -59,10 +59,8 @@ public class MainActivity extends AppCompatActivity {
         appName = findViewById(R.id.snapSolve);
         loginImg = findViewById(R.id.loginImage);
 
-
         checkCredentials();
     }
-
 
     private boolean checkCredentials(){
 
@@ -70,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         String _UserPassword=password.getText().toString();
 
         boolean result=true;
-
 
          if(_MobileNo.trim().length()!=10){
             mobNum.setError("Invalid Mobile Number");

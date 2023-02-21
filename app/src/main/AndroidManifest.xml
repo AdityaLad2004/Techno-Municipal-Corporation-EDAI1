@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="AIzaSyD5cEdF0OGbpKynmg_eSE59OITzj-XXx4c" />
 
     <application
         android:allowBackup="true"
@@ -18,6 +30,36 @@
         android:theme="@style/Theme.SnapSolve"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".EditActivity"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA-H9kC26f3AWnAtFnfen71l7GBo8-8Jag" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".DescriptionOfProblem"
+            android:exported="false"
+            android:parentActivityName=".imageAndDescriptionstray">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".OTPPage"
             android:exported="false">
@@ -33,6 +75,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -42,12 +85,7 @@
             android:exported="false"
             android:label="Registration"
             android:parentActivityName=".MainActivity"
-
             android:windowSoftInputMode="stateVisible|adjustPan" />
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/map_key" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -64,35 +102,29 @@
             android:exported="false"
             android:label="Instructions"
             android:parentActivityName=".ProblemCatagory"
-
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".imageAndDescriptionstray"
             android:exported="false"
             android:label="Instructions"
             android:parentActivityName=".ProblemCatagory"
-
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".imageAndDescriptiondead"
             android:exported="false"
             android:label="Instructions"
             android:parentActivityName=".ProblemCatagory"
-
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ProblemCatagory"
             android:exported="false"
             android:label="Catagory"
             android:parentActivityName=".MainActivity"
-
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:windowSoftInputMode="stateVisible|adjustPan">
-
-        </activity>
+            android:windowSoftInputMode="stateVisible|adjustPan" />
 
         <meta-data
             android:name="preloaded_fonts"

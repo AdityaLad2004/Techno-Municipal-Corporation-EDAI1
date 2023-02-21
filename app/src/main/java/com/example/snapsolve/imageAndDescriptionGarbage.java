@@ -32,6 +32,12 @@ public class imageAndDescriptionGarbage extends AppCompatActivity {
         startActivityForResult(icamera,CAMERA_REQ_CODE);
     }
 
+    public void garbage(View b){
+        Toast.makeText(this, "Opening", Toast.LENGTH_SHORT).show();
+        Intent intent =new Intent(this,DescriptionOfProblem.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -44,5 +50,7 @@ public class imageAndDescriptionGarbage extends AppCompatActivity {
             }
         }
     }
+
+
 }
 

@@ -10,8 +10,9 @@
 
     <ImageView
         android:id="@+id/probImg"
-        android:layout_width="0dp"
-        android:layout_height="350dp"
+        android:layout_width="416dp"
+        android:layout_height="412dp"
+
         android:scaleType="fitXY"
         app:layout_constraintBottom_toTopOf="@+id/camera"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +25,7 @@
         android:id="@+id/camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="28dp"
         android:onClick="openCamera"
         android:text="Take Pic"
         app:layout_constraintBottom_toTopOf="@+id/nxtbtnstray"
@@ -36,8 +37,8 @@
         android:id="@+id/nxtbtnstray"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="216dp"
-        android:onClick="nxtbtnstray"
+        android:layout_marginBottom="156dp"
+        android:onClick="stray"
         android:text="next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

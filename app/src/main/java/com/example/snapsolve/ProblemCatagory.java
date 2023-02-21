@@ -3,13 +3,17 @@ package com.example.snapsolve;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ProblemCatagory extends AppCompatActivity {
     CardView garbageReport,deadAnimalReport,strayAnimal;
+    TextView textview;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,19 +21,24 @@ public class ProblemCatagory extends AppCompatActivity {
         garbageReport=(CardView) findViewById(R.id.garbageReport);
         deadAnimalReport=(CardView) findViewById(R.id.deadAnimalReport);
         strayAnimal = (CardView) findViewById(R.id.strayAnimals);
+        textview=(TextView) findViewById(R.id.textView4);
 
         }
 
         public void nextgarbageReport(View v){
+
             Toast.makeText(this, "Opening Garbage Report Section", Toast.LENGTH_SHORT).show();
             Intent garbage=new Intent(this, imageAndDescriptionGarbage.class);
             startActivity(garbage);
+
         }
 
         public void nextStrayAnimal(View v){
+
         Toast.makeText(this, "Opening Stray Animal Section", Toast.LENGTH_SHORT).show();
         Intent stray=new Intent(this, imageAndDescriptionstray.class);
         startActivity(stray);
+
     }
 
         public void nextDeadAnimalReport(View v){

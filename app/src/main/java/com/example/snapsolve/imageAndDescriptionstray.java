@@ -20,25 +20,30 @@ public class imageAndDescriptionstray extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_image_and_descriptiongarbage);
+        setContentView(R.layout.activity_image_and_descriptionstray);
         imgcamera = findViewById(R.id.probImg);
         btn = findViewById(R.id.camera);
         nxtbtn=findViewById(R.id.nxtbtnstray);
+
     }
 
     public void openCamera(View v){
+
         Toast.makeText(this, "Opening Camera", Toast.LENGTH_SHORT).show();
         Intent icamera=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(icamera,CAMERA_REQ_CODE);
+        
     }
 
-    public void nxtbtnstray(View v){
-        Toast.makeText(this, "Please Wait", Toast.LENGTH_SHORT).show();
-
+    public void stray(View c){
+        Toast.makeText(this, "Opening", Toast.LENGTH_SHORT).show();
+        Intent intent =new Intent(this,DescriptionOfProblem.class);
+        startActivity(intent);
     }
+
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         if(resultCode==RESULT_OK){
@@ -47,6 +52,12 @@ public class imageAndDescriptionstray extends AppCompatActivity {
                 imgcamera.setImageBitmap(img);
             }
         }
+
+
     }
+
+
+
+
 }
 
