@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/grad1"
 
-    tools:context=".MainActivity" >
+    tools:context=".otp1" >
 
     <ImageView
         android:id="@+id/loginImage"
@@ -57,7 +57,7 @@
         android:layout_height="54dp"
         android:layout_marginBottom="32dp"
         android:fontFamily="@font/bad_script"
-        android:text="Snap Solve"
+        android:text="TMC"
         android:textAllCaps="false"
         android:textSize="34sp"
         android:textStyle="bold|italic"

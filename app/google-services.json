@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "531476012483",
+    "project_id": "snapsolve-17c95",
+    "storage_bucket": "snapsolve-17c95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531476012483:android:1d89e3c73a0025a8bb7176",
+        "android_client_info": {
+          "package_name": "com.example.snapsolve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531476012483-282ksu9jlido3p99pn4h2lqf76trt9ac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFrKtoNxnQOL5lfqgnpLJ-Zr1b5Z0Orlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531476012483-282ksu9jlido3p99pn4h2lqf76trt9ac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
