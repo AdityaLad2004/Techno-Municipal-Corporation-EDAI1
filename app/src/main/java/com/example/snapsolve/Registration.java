@@ -34,9 +34,9 @@ public class Registration extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
-        registrationimage=findViewById(R.id.registerimg);
+
         register=findViewById(R.id.button);
-        appname=findViewById(R.id.textView);
+
         firstname=findViewById(R.id.fname);
         lastname=findViewById(R.id.lname);
         password=findViewById(R.id.loginpassword);

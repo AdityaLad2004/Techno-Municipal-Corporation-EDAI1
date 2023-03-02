@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.loginpassword);
         registration=findViewById(R.id.notregistered);
         login = findViewById(R.id.login);
-        appName = findViewById(R.id.snapSolve);
-        loginImg = findViewById(R.id.loginImage);
+
+
 
         checkCredentials();
     }
