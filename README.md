@@ -24,15 +24,23 @@ GoDaddy.
 5)Locate On Google Map
 6)Submit
 
-![Registration](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/94eda15b-f79c-41c5-b87a-5b218adfe052)
-![QR](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/5f1a2781-e146-4757-989d-285d91507360)
-![ProblemCatagory](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/2c0e406f-66e4-44ab-a9fd-5847878ba57b)
-![OTP](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/b1d397d2-e9c0-40bb-81dd-bd3ebda638e1)
-![Map](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/06a30305-f75e-43ed-9b87-83220e8ef197)
-![Login](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/74e1e9e6-5c53-458b-9dd2-c4529aa2ef1b)
-![LastScreen](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/5ff7a3e2-a8ff-4361-b6d9-feb1873aa509)
-![ImageAndNext](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/762e8143-7ce3-4048-bdf5-32b85817c637)
-![DescriptionOfProblem](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/81e51852-5368-4f61-adc2-a8d7d11797d6)
+![DescriptionOfProblem](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/fb49ac1d-5115-4b80-b856-059f5e3bd228)
+
+![ImageAndNext](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/1e2aa2ad-fb76-4652-99aa-3e58d4a88871)
+
+![LastScreen](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/39490970-fc6f-46f3-8f64-720cb48f84fe)
+
+![Login](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/86a6c464-9ab3-4e04-8c6d-58788d091027)
+
+![Map](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/8b9aca3a-a87a-43ca-8542-9a668388ff6c)
+
+![OTP](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/36cb79da-ad13-46ed-972f-6f553ff95992)
+
+![ProblemCatagory](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/23d0c34e-5174-49fd-89ed-b5f37adbecc9)
+
+![QR](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/5238e94e-6656-4fac-9cb0-a139e8ebac5c)
+
+![Registration](https://github.com/AdityaLad2004/Techno-Municipal-Corporation-EDAI1/assets/118820582/47e92c63-2592-497d-9593-d4c48cdd2264)
 
 
 
